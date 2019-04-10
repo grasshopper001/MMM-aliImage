@@ -6,6 +6,9 @@ Module.register("MMM-aliImage",{
     start:function(){
         this.sendSocketNotification("bring schedule",this.config.server);
     },
+    getScripts:function(){
+        return ["MMM-aliImage.css"]
+    },
     getDom:function(){
         var wrapper=document.createElement("div");
         wrapper.id="schedule-wrapper";
